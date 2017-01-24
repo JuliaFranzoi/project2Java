@@ -1,6 +1,6 @@
 import static org.junit.Assert.*;
 import org.junit.*;
-import shoppingCart.*;
+import shoppingCart2.*;
 
 public class ItemTest {
   Item item;

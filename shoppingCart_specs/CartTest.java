@@ -1,7 +1,7 @@
 import static org.junit.Assert.*;
 import org.junit.*;
 import java.util.ArrayList;
-import shoppingCart.*;
+import shoppingCart2.*;
 
 public class CartTest{
   Cart cart;
@@ -50,7 +50,7 @@ public class CartTest{
 
   @Test
   public void chooseNoItemTest(){
-    assertEquals("Product Not found", cart.chooseItem("12rt"));
+    assertEquals(null, cart.chooseItem("12rt"));
   }
 
 }

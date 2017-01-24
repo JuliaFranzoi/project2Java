@@ -1,6 +1,6 @@
 import static org.junit.Assert.*;
 import org.junit.*;
-import shoppingCart.*;
+import shoppingCart2.*;
 
 
 public class ShopTest {
@@ -15,7 +15,6 @@ public class ShopTest {
     item = new Item("cheese", 2.00, 2);
 
   } 
-  
 
   @Test
   public void getFundsTest(){
@@ -35,9 +34,10 @@ public class ShopTest {
   public void giveRefundTest(){
     
     double refundValue = item.getPrice();
+    cart.addToBasket(item);
     shop.giveRefund(refundValue);
 
-    assertEquals(17.00, shop.getFunds(), 0.01);
+    assertEquals(13.00, shop.getFunds(), 0.01);
 
 }
 

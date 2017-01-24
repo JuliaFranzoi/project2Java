@@ -1,13 +1,12 @@
 import static org.junit.Assert.*;
 import org.junit.*;
 import java.util.ArrayList;
-import shoppingCart.*;
+import shoppingCart2.*;
 
 public class CustomerTest{
   Customer customer;
   Item item;
   Cart cart;
-  Shop shop;
   DebitCard debitcard;
 
 
@@ -26,13 +25,18 @@ public class CustomerTest{
     assertEquals("julia", customer.getName());
   }
 
-  @Test
-  public void getCardTest(){
-    assertEquals("debitcard", customer.getCard());
-  }
+  // @Test
+  // public void getCardTest(){
+  //   assertEquals("debitcard", customer.getCard());
+  // }
   
-
+  // @Test
+  // public void setCardtest(){
+  //   assertEquals("debitcard", customer.setCard());
+  //   }
   }
+
+  
 
 
 

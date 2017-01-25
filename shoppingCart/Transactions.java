@@ -1,4 +1,4 @@
-package shoppingCart2;
+package shoppingCart;
 
 public class Transactions {
   private Customer customer;

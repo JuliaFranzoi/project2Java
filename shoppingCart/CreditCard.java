@@ -1,4 +1,4 @@
-package shoppingCart2;
+package shoppingCart;
 import behaviours.*;
 
 public class CreditCard implements Cardable{

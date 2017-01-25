@@ -1,7 +1,7 @@
 import static org.junit.Assert.*;
 import org.junit.*;
 import java.util.ArrayList;
-import shoppingCart2.*;
+import shoppingCart.*;
 
 public class CustomerTest{
   Customer customer;
@@ -25,15 +25,18 @@ public class CustomerTest{
     assertEquals("julia", customer.getName());
   }
 
-  // @Test
-  // public void getCardTest(){
-  //   assertEquals("debitcard", customer.getCard());
-  // }
+  @Test
+  public void getCardTest(){
+    
+    assertNotNull(customer.getCard());
+  }
   
-  // @Test
-  // public void setCardtest(){
-  //   assertEquals("debitcard", customer.setCard());
-  //   }
+  @Test
+  public void setCardtest(){
+    CreditCard creditcard = new CreditCard("creditcard",  100.00);
+    customer.setCard(creditcard);
+    assertEquals("creditcard", customer.getCard().getNumber());
+    }
   }
 
   

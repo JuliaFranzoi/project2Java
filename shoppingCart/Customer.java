@@ -1,5 +1,5 @@
 
-package shoppingCart2;
+package shoppingCart;
 import behaviours.*;
 import java.util.ArrayList;
 

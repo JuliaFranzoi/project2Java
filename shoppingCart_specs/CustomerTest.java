@@ -27,19 +27,32 @@ public class CustomerTest{
 
   @Test
   public void getCardTest(){
-    
     assertNotNull(customer.getCard());
   }
   
+  @Test
+  public void getCardFundsTest(){
+    
+    assertEquals(100.00, customer.getCard().getFunds(), 0.01);
+  }
+
   @Test
   public void setCardtest(){
     CreditCard creditcard = new CreditCard("creditcard",  100.00);
     customer.setCard(creditcard);
     assertEquals("creditcard", customer.getCard().getNumber());
     }
-  }
 
+//   @Test
+//   public void payForCartTest(){
+//     double price = cart.getTotalPrice();
+    
+//     assertEquals(98.00, customer.getCard().getFunds(),0.01);
   
+  
+// }
+
+  }
 
 
 

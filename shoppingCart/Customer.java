@@ -32,17 +32,18 @@ public class Customer {
     public Cart getCart(){
         return this.cart;
     } 
- 
+    
 
-    public void payForCart(){
-        double funds = card.getFunds();
-        double totalPriceOfCart = cart.getTotalPrice();
-        if(funds >= totalPriceOfCart){
-           funds -= totalPriceOfCart;  
-        } else { 
-          System.out.println("Not enough funds");
-        }
-    }
+
+    // public void payForCart(double totalPriceOfCart){
+    //     double funds = getCard().getFunds();
+    //     if(funds >= totalPriceOfCart){
+    //        funds -= totalPriceOfCart;  
+    //     } 
+    //     else { 
+    //       System.out.println("Not enough funds");
+    //     }
+    // }
    
 }
 

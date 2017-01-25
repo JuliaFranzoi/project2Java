@@ -18,9 +18,13 @@ public class CreditCard implements Cardable{
   public double getFunds() {
       return this.funds;
   }
-
+ 
   public void getRefund(double totalRefund){
       funds+=totalRefund;
   }  
+  
+  public void decreaseFund(double purchasePrice){
+    funds-=purchasePrice;
+  }
 
 }

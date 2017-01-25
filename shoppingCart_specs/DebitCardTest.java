@@ -21,5 +21,8 @@ public class DebitCardTest{
     assertEquals(100.00, debitcard.getFunds(), 0.01);
   }
 
-
+ @Test
+ public void printFundsTest(){
+  assertEquals("Current Funds: 100.0", debitcard.printFunds());
+ }
 }

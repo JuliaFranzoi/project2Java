@@ -10,7 +10,6 @@ public class DebitCard implements Cardable{
     this.funds = funds;
   }
   
-
   public String getNumber() {
       return this.number;
   }
@@ -18,9 +17,17 @@ public class DebitCard implements Cardable{
   public double getFunds() {
       return this.funds;
   }
+  
+  public String printFunds(){
+    return "Current Funds: " + Double.toString(this.funds);
+  }
 
   public void getRefund(double totalRefund){
       funds+=totalRefund;
   }  
 
+  public void decreaseFund(double purchasePrice){
+    funds-=purchasePrice;
+
+  }
 }

@@ -10,4 +10,6 @@ public interface Cardable {
 
    void getRefund(double totalRefund);
       
+   void decreaseFund(double purchasePrice);
+     
 }

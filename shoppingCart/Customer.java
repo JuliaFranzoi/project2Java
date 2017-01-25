@@ -25,8 +25,8 @@ public class Customer {
         return this.card;
     }
     
-    public Cardable setCard(){   
-        return this.card = card;
+    public void setCard(Cardable newCard){   
+        this.card = newCard;
     }
 
     public Cart getCart(){
